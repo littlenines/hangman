@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.stickman-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-wrapper {
+ margin-left: 1rem;
+
+ .good-answer,.bad-answer {
+     border: 1px dotted black;
+     margin-bottom: 1rem;
+ }
+}
+
+.board {
+    border: 1px dotted black;
+    width: 20%;
+}
+
+.overlay {
+    position: fixed;
+    display: none; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 2; 
+  }
+
+  .message{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+  }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="overlay" data-overlay>
+        <div class="message">Game Over</div>
+    </div>
+    <div class="stickman-wrapper">
+        <section class="board" data-board>
+            <canvas id="stickman" data-stickman>This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+        </section>
+        <section class="info-wrapper">
+            <div>
+                <p>Right:</p>
+                <div data-right class="good-answer"></div>
+            </div>
+            
+            <div>
+                <p>Wrong:</p>
+                <div data-guesses class="bad-answer"></div>
+            </div>
+            
+            <section data-guess>
+                <input type="text" name="" maxlength="1" data-character-guess>
+                <button data-submit>Submit</button>
+            </section>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
