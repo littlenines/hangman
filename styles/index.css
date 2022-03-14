@@ -5,6 +5,14 @@
   padding: 0;
 }
 
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 2rem;
+}
+
 .stickman-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,20 +23,29 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .info-wrapper {
   margin-left: 1rem;
+  width: 100%;
 }
 
-.info-wrapper .good-answer, .info-wrapper .bad-answer {
-  border: 1px dotted black;
+.info-wrapper .good-answer, .info-wrapper .all-guesses {
   margin-bottom: 1rem;
+  font-size: 3rem;
 }
 
 .board {
-  border: 1px dotted black;
-  width: 20%;
+  border: 3px dotted black;
 }
 
 .overlay {
@@ -38,17 +55,28 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .message {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 50px;
+  font-size: 5rem;
   color: white;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.info-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 /*# sourceMappingURL=index.css.map */

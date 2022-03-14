@@ -1,27 +1,28 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@import 'reset';
 
 .stickman-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .info-wrapper {
  margin-left: 1rem;
+ width: 100%;
 
- .good-answer,.bad-answer {
-     border: 1px dotted black;
+ .good-answer,.all-guesses {
      margin-bottom: 1rem;
+     font-size: 3rem;
  }
 }
 
 .board {
-    border: 1px dotted black;
-    width: 20%;
+    border: 3px dotted black;
 }
 
 .overlay {
@@ -31,15 +32,21 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5); 
     z-index: 2; 
+    background-color: rgba(0,0,0,0.5); 
   }
 
   .message{
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 50px;
+    font-size: 5rem;
     color: white;
     transform: translate(-50%,-50%);
+  }
+
+  .info-data {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
   }
