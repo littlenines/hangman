@@ -10,11 +10,11 @@
 <body>
     <div class="overlay" data-overlay>
         <div class="message" data-message></div>
-        <button data-reset>Play Again</button>
+        <button data-reset class="reset-button">Play Again</button>
     </div>
     <div class="stickman-wrapper">
         <section class="board" data-board>
-            <canvas id="stickman" data-stickman>This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+            <canvas data-stickman>This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
         </section>
         <section class="info-wrapper">
             <div class="info-data">
@@ -28,7 +28,7 @@
             </div>
             
             <section data-guess>
-                <input type="text" name="" maxlength="1" data-character-guess>
+                <input type="text" maxlength="1" data-character-guess>
                 <button data-submit>Submit</button>
             </section>
         </section>

@@ -14,7 +14,7 @@ const word = ['ananas', 'dragon', 'cat', 'carrot', 'dubai', 'badin'];
 let randomWord = Math.floor(Math.random() * word.length);
 let correctArray = [];
 let typed = [];
-let wordCharacters = word[randomWord].toString().split("");
+let wordCharacters = word[2].toString().split("");
 
 ctx.beginPath();
 
@@ -78,6 +78,7 @@ resetGame.addEventListener('click', () => {
 const handleClick = (active) => {
     if (active) {
         const guess = characterGuess.value.toLowerCase();
+        if (!/^[a-zA-Z]+$/.test(guess)) return;
         checkSameInput(guess);
     } else {
         return;

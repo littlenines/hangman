@@ -36,13 +36,19 @@
     background-color: rgba(0,0,0,0.5); 
   }
 
-  .message{
+  .message,.reset-button {
     position: absolute;
     top: 50%;
     left: 50%;
     font-size: 5rem;
     color: white;
     transform: translate(-50%,-50%);
+  }
+
+  .reset-button {
+      top: 60%;
+      color: #F4F4F4;
+      background-color: #557571;
   }
 
   .info-data {
