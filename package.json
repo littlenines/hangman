@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "jest-test": "jest"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,7 @@
     "url": "https://github.com/littlenines/hangman/issues"
   },
   "homepage": "https://github.com/littlenines/hangman#readme",
-  "dependencies": {
-    "cypress": "^9.5.2"
+  "devDependencies": {
+    "jest": "^27.5.1"
   }
 }

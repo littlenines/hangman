@@ -88,12 +88,12 @@ const handleClick = (active) => {
 const checkSameInput = (guess) => {
     if (typed.includes(guess)) {
         alert("already inputed")
-        return
     } else {
         typed.push(guess);
         guesses.innerHTML = typed;
         gamePlay(guess);
     }
+    return true;
 }
 
 const gamePlay = (guess) => {
@@ -133,3 +133,5 @@ const generateWordLength = () => {
 }
 
 generateWordLength();
+
+module.exports = checkSameInput;
